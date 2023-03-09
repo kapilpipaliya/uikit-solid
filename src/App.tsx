@@ -2,24 +2,26 @@ import type { Component } from 'solid-js';
 
 import logo from './logo.svg';
 import styles from './App.module.css';
+import { newVertex } from './utils/newVertex';
+import { Vertex } from './components/Form';
+import { Label } from './components/Label/Label';
 
 const App: Component = () => {
+  const meta = newVertex(0, ["Meta"], {
+    id: "meta1",
+    props: { enableThreeStateBehavior: false },
+  });
+  const data = newVertex(0, ["Vertex"], { id: "vertex1" });
+  const setValue = (attribute: Vertex, data: any) => {
+    console.log(attribute, data);
+  };
+
   return (
-    <div class={styles.App}>
-      <header class={styles.header}>
-        <img src={logo} class={styles.logo} alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          class={styles.link}
-          href="https://github.com/solidjs/solid"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Solid
-        </a>
-      </header>
+    <div>
+      <h1>uikit solidjs</h1>
+
+      <h3>Label</h3>
+      <Label content="Label" color="primary" meta={meta} data={data} setValue={setValue} />
     </div>
   );
 };
