@@ -2,8 +2,8 @@ import {JSX} from "solid-js";
 
 interface BaseProps {
   id?: string;
-  className?: string;
-  style?: object;
+  class?: string;
+  style?: string;
 }
 
 interface BaseContainerProps extends BaseProps {

@@ -1,19 +1,18 @@
-import _classNames from "classnames";
-
 import { ComponentProps } from "../Form";
+import {LabelProps} from "../../../globals";
+import {splitProps} from "solid-js";
 
-export type LabelComponentProps = ComponentProps & LabelProps;
-
-export function Label(props: LabelComponentProps) {
-  const metaProps = () => props.meta.properties.props as LabelProps
+export function Label(props: ComponentProps) {
+  const [selectedProps, customProps] = splitProps(props.meta.properties.props as LabelProps, ['color'])
 
   return (
     <div
+      {...customProps}
       classList={{
-        [`uk-label-${metaProps().color}`]: !!metaProps().color,
+        [`uk-label-${selectedProps.color}`]: !!selectedProps.color,
       }}
     >
-      {props.content}
+      {props.data.properties[props.meta.properties.id]}
     </div>
   );
 }
