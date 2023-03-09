@@ -1,7 +1,5 @@
 import type { Component } from 'solid-js';
 
-import logo from './logo.svg';
-import styles from './App.module.css';
 import { newVertex } from './utils/newVertex';
 import { Vertex } from './components/Form';
 import { Label } from './components/Label/Label';

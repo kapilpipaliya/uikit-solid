@@ -1,3 +1,5 @@
+import {JSX} from "solid-js";
+
 interface BaseProps {
   id?: string;
   className?: string;
@@ -94,24 +96,24 @@ interface FlexProps extends BaseContainerProps {
   wrap?: string;
 }
 
-interface FormProps extends React.HTMLProps<HTMLFormElement> {
+interface FormProps extends JSX.HTMLAttributes<HTMLFormElement> {
   layout?: string;
   custom?: boolean;
 }
 
-interface FormInputProps extends React.HTMLProps<HTMLInputElement> {
+interface FormInputProps extends JSX.HTMLAttributes<HTMLInputElement> {
   color?: 'danger' | 'success' | 'blank';
   layout?: 'small' | 'large';
   width?: 'large' | 'medium' | 'small' | 'xsmall';
 }
 
-interface FormSelectProps extends React.HTMLProps<HTMLSelectElement> {
+interface FormSelectProps extends JSX.HTMLAttributes<HTMLSelectElement> {
   color?: 'danger' | 'success' | 'blank';
   layout?: 'small' | 'large';
   width?: 'large' | 'medium' | 'small' | 'xsmall';
 }
 
-interface FormTextareaProps extends React.HTMLProps<HTMLTextAreaElement> {
+interface FormTextareaProps extends JSX.HTMLAttributes<HTMLTextAreaElement> {
   children?: string;
   color?: 'danger' | 'success' | 'blank';
   layout?: 'small' | 'large';
@@ -132,7 +134,7 @@ interface IconProps extends BaseProps {
   image?: string;
 }
 
-interface ImageProps extends React.HTMLProps<HTMLImageElement> {
+interface ImageProps extends JSX.HTMLAttributes<HTMLImageElement> {
   options?: string;
 }
 
