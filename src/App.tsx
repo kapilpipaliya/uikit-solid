@@ -4,12 +4,13 @@ import { newVertex } from './utils/newVertex';
 import { Vertex } from './components/Form';
 import { Label } from './components/Label/Label';
 
-const App: Component = () => {
+export const App = () => {
   const meta = newVertex(0, ["Meta"], {
     id: "meta1",
-    props: { enableThreeStateBehavior: false },
+    props: { enableThreeStateBehavior: false, content: "Label", color: "primary" },
   });
-  const data = newVertex(0, ["Vertex"], { id: "vertex1" });
+  const data = newVertex(0, ["Vertex"], { meta1: "Sample Label" });
+
   const setValue = (attribute: Vertex, data: any) => {
     console.log(attribute, data);
   };
@@ -19,9 +20,7 @@ const App: Component = () => {
       <h1>uikit solidjs</h1>
 
       <h3>Label</h3>
-      <Label content="Label" color="primary" meta={meta} data={data} setValue={setValue} />
+      <Label meta={meta} data={data} setValue={setValue} />
     </div>
   );
 };
-
-export default App;

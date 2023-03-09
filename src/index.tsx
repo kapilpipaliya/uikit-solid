@@ -1,10 +1,9 @@
 /* @refresh reload */
 import { render } from 'solid-js/web';
 
-import './index.css';
 import '../dist/css/uikit.min.css'
 import '../dist/js/uikit.min.js'
-import App from './App';
+import {App} from './App';
 
 const root = document.getElementById('root');
 
