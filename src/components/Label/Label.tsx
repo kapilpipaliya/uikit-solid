@@ -1,4 +1,4 @@
-import { ComponentProps } from "../Form";
+import {ComponentProps} from "../Form";
 import {LabelProps} from "../../../globals";
 import {splitProps} from "solid-js";
 

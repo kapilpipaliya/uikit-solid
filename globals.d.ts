@@ -4,6 +4,7 @@ interface BaseProps {
   id?: string;
   class?: string;
   style?: string;
+  children: JSX.Element
 }
 
 interface BaseContainerProps extends BaseProps {
