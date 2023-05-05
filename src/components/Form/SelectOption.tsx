@@ -1,5 +1,5 @@
 import {JSX} from "solid-js";
-import {setClassNames} from "../../utils/set-class-names";
+import {setClassNames} from "../set-class-names";
 
 
 export function SelectOption  (props: JSX.HTMLAttributes<HTMLOptionElement>)  {

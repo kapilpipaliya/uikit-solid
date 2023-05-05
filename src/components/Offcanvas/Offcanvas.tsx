@@ -1,6 +1,6 @@
 import {OffcanvasProps} from "../../../globals";
 import {createEffect} from "solid-js";
-import {setClassNames} from "../../utils/set-class-names";
+import {setClassNames} from "../set-class-names";
 
 export function Offcanvas(props: OffcanvasProps) {
   createEffect(() => {

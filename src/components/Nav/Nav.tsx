@@ -1,4 +1,4 @@
-import {setClassNames} from "../../utils/set-class-names";
+import {setClassNames} from "../set-class-names";
 import {NavProps} from "../../../globals";
 
 export function Nav(props: NavProps) {

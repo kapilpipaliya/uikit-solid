@@ -1,6 +1,6 @@
 import {createSignal} from "solid-js";
 import {ProgressProps} from "../../../globals";
-import {setClassNames} from "../../utils/set-class-names";
+import {setClassNames} from "../set-class-names";
 
 export function Progress(props: ProgressProps) {
   const [state, setState] = createSignal({ value: props.value });

@@ -1,5 +1,5 @@
 import {TableDataProps} from "../../../globals";
-import {setClassNames} from "../../utils/set-class-names";
+import {setClassNames} from "../set-class-names";
 
 export function TableData(props: TableDataProps) {
   const _setClassNames = () => {

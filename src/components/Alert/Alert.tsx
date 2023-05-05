@@ -1,4 +1,4 @@
-import {setClassNames} from "../../utils/set-class-names";
+import {setClassNames} from "../set-class-names";
 import {createEffect, createSignal, splitProps} from "solid-js";
 import {AlertProps} from "../../../globals";
 

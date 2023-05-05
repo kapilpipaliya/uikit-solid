@@ -1,5 +1,5 @@
 import {FormProps} from "../../../globals";
-import {setClassNames} from "../../utils/set-class-names";
+import {setClassNames} from "../set-class-names";
 
 
 export function Form  (props: FormProps)  {

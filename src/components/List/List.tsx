@@ -1,5 +1,5 @@
 import {ListProps} from "../../../globals";
-import {setClassNames} from "../../utils/set-class-names";
+import {setClassNames} from "../set-class-names";
 
 export function List(props: ListProps) {
 

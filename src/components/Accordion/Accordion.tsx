@@ -1,4 +1,4 @@
-import {setClassNames} from "../../utils/set-class-names";
+import {setClassNames} from "../set-class-names";
 import {AccordionProps} from "../../../globals";
 import {createEffect, createSignal} from "solid-js";
 // @ts-ignore

@@ -1,5 +1,5 @@
 import {OverlayProps} from "../../../globals";
-import {setClassNames} from "../../utils/set-class-names";
+import {setClassNames} from "../set-class-names";
 
 export function Overlay(props: OverlayProps) {
   return (
